@@ -1,4 +1,5 @@
 #include "asm1.h"
+#include "asm2.h"
 #include <assert.h>
 #include <stdio.h>
 
@@ -39,6 +40,8 @@ void test_asm1() {
 	assert(result6 != NULL);
 	//result = ""
 	printf("%s\n", result6);
+
+	printf("%f", ctg(5));
 }
 
 int main() {
