@@ -41,10 +41,24 @@ void test_asm1() {
 	//result = ""
 	printf("%s\n", result6);
 
-	printf("%f", ctg(5));
+}
+
+void test_asm2() {
+	//result = 1.83048772171
+	printf("%f\n", ctg(0.5));
+
+	//result = inf
+	printf("%f\n", ctg(0));
+
+	//result = 1
+	printf("%f\n", ctg(0.78539816339));
+
+	//result = 0
+	printf("%f\n", ctg(1.57079632679));
 }
 
 int main() {
 	test_asm1();
+	test_asm2();
 	return 0;
 }
